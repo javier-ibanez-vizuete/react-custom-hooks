@@ -1,0 +1,64 @@
+import { createContext, useState } from "react";
+
+export const LanguageContext = createContext(null);
+
+export const LanguageProvider = ({ children }) => {
+	const [lang, setLang] = useState("en");
+
+	const onToggleLang = () => {
+		setLang((prevLang) => (prevLang === "en" ? "es" : "en"));
+	};
+
+	const TEXTS = {
+		en: {
+			h1: "CUSTOM HOOKS",
+			registerFormTitle: "Register Form",
+			inputNameLabel: "Name",
+			inputNamePlaceholder: "Insert a Name",
+			inputEmailLabel: "Email",
+			inputEmailPlaceholder: "Insert an Email",
+			inputPasswordLabel: "Password",
+			inputPasswordPlaceholder: "Insert a Password",
+			inputRePasswordLabel: "Confirm Password",
+			btnSendRegisterForm: "Register",
+			noNameField: "Name Field is Required",
+			nameFieldShorter: "The Given Name is Too Short",
+			nameFieldLonger: "The Given Name is Too Long",
+			noEmailField: "Email Field is Required",
+			emailNotValid: "The Given Email is not Valid",
+			emailShorter: "The Given Email is Too Short",
+			noPasswordField: "Password Field is Required",
+			passwordShorter: "The Given Password is Too Short",
+			passwordLonger: "The Given Password is Too Long",
+			noRePasswordField: "Confirm Password Field is Required",
+			passwordNotEqual: "Passwords are different",
+			emailExistAlert: "The Given Email already Exist",
+		},
+		es: {
+			h1: "HOOKS PERSONALIZADOS",
+			registerFormTitle: "Formulario de Registro",
+			inputNameLabel: "Nombre",
+			inputNamePlaceholder: "Introduzca un Nombre",
+			inputEmailLabel: "Correo Electrónico",
+			inputEmailPlaceholder: "Introduzca un Correo Electrónico",
+			inputPasswordLabel: "Contraseña",
+			inputPasswordPlaceholder: "Introduzca una contraseña",
+			inputRePasswordLabel: "Corfirmar Contraseña",
+			btnSendRegisterForm: "Registrarse",
+			noNameField: "El campo nombre es obligatorio",
+			nameFieldShorter: "El nombre introducido es muy corto",
+			nameFieldLonger: "El Nombre introducido es muy Largo",
+			noEmailField: "El campo Email es obligatorio",
+			emailNotValid: "El Correo Electronico no es Valido",
+			emailShorter: "El Email Introducido es muy corto",
+			noPasswordField: "El campo Contraseña es Obligatorio",
+			passwordShorter: "La Contraseña introducida es muy corta",
+			passwordLonger: "La Contraseña introducida es muy larga",
+			noRePasswordField: "El campo Confirmar contraseña es Obligatorio",
+			passwordNotEqual: "Las Contraseñas no coinciden",
+			emailExistAlert: "El Email introducido ya Existe",
+		},
+	};
+
+	return <LanguageContext value={{ lang, TEXTS, onToggleLang }}>{children}</LanguageContext>;
+};

@@ -1,0 +1,31 @@
+body {
+	background-color: bisque;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+	width: var(--container-width);
+	margin: 0 auto;
+	background-color: #fabada;
+}
+
+.btn {
+	padding: var(--spacing-xs) var(--spacing-sm);
+	border-radius: var(--border-radius-card);
+}
+.btn-primary {
+	background-color: var(--btn-primary-color);
+}
+
+.btn-secondary {
+	background-color: var(--btn-secondary-color);
+	color: var(--btn-text-color-dark);
+}
+
+.error-text {
+	color: red;
+	font-weight: bolder;
+}
