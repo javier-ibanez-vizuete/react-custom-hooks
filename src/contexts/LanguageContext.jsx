@@ -11,6 +11,7 @@ export const LanguageProvider = ({ children }) => {
 
 	const TEXTS = {
 		en: {
+			pageTitle: "Exercises Custom Hooks",
 			h1: "CUSTOM HOOKS",
 			registerFormTitle: "Register Form",
 			inputNameLabel: "Name",
@@ -33,8 +34,12 @@ export const LanguageProvider = ({ children }) => {
 			noRePasswordField: "Confirm Password Field is Required",
 			passwordNotEqual: "Passwords are different",
 			emailExistAlert: "The Given Email already Exist",
+			btnIncrease: "Increase",
+			btnDecrease: "Decrease",
+			btnReset: "Reset",
 		},
 		es: {
+			pageTitle: "Ejercicios Custom Hooks",
 			h1: "HOOKS PERSONALIZADOS",
 			registerFormTitle: "Formulario de Registro",
 			inputNameLabel: "Nombre",
@@ -57,6 +62,9 @@ export const LanguageProvider = ({ children }) => {
 			noRePasswordField: "El campo Confirmar contraseña es Obligatorio",
 			passwordNotEqual: "Las Contraseñas no coinciden",
 			emailExistAlert: "El Email introducido ya Existe",
+			btnIncrease: "Aumentar",
+			btnDecrease: "Reducir",
+			btnReset: "Reiniciar",
 		},
 	};
 
