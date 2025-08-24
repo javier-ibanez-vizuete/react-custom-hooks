@@ -4,6 +4,7 @@ import { RegisterForm } from "./components/RegisterForm/RegisterForm";
 import { LanguageContext } from "./contexts/LanguageContext";
 import { CounterBox } from "./components/CounterBox/CounterBox";
 import { useResponsive } from "./hooks/useResponsive";
+import { PokemonViewer } from "./components/PokemonViewer/PokemonViewer";
 
 export const App = () => {
 	const { lang, TEXTS, onToggleLang } = useContext(LanguageContext);
@@ -32,6 +33,8 @@ export const App = () => {
 			<RegisterForm />
 
 			<CounterBox />
+
+			<PokemonViewer />
 		</div>
 	);
 };

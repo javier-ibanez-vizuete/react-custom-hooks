@@ -37,6 +37,11 @@ export const LanguageProvider = ({ children }) => {
 			btnIncrease: "Increase",
 			btnDecrease: "Decrease",
 			btnReset: "Reset",
+			pokemonNameLabel: "Pokemon Id",
+			pokemonExampleId: "Example: (Number '17' is Pidgeotto)",
+			pokemonNamePlaceholder: "Insert the Pokemon Id",
+			pokemonLoadingText: "We're trying to catch it for you...",
+			pokemonFetchError: "Looks like we didn't catch it.",
 		},
 		es: {
 			pageTitle: "Ejercicios Custom Hooks",
@@ -65,6 +70,11 @@ export const LanguageProvider = ({ children }) => {
 			btnIncrease: "Aumentar",
 			btnDecrease: "Reducir",
 			btnReset: "Reiniciar",
+			pokemonNameLabel: "Identificador Del Pokemon",
+			pokemonExampleId: "Ejemplo: (El Numero 17 es Pidgeotto)",
+			pokemonNamePlaceholder: "Introduzca el Identificador del Pokemon",
+			pokemonLoadingText: "Estamos intentando capturarlo para ti...",
+			pokemonFetchError: "Vaya! Parece que no hemos conseguido Capturarlo",
 		},
 	};
 
