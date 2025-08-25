@@ -6,6 +6,7 @@ import { CounterBox } from "./components/CounterBox/CounterBox";
 import { useResponsive } from "./hooks/useResponsive";
 import { PokemonViewer } from "./components/PokemonViewer/PokemonViewer";
 import { useDevice } from "./hooks/useDevice";
+import { LayoutSwitcher } from "./components/LayoutSwitcher/LayoutSwitcher";
 
 export const App = () => {
 	const { lang, TEXTS, onToggleLang } = useContext(LanguageContext);
@@ -37,6 +38,14 @@ export const App = () => {
 				{isTablet && <h2>{TEXTS[lang].tabletExample}</h2>}
 				{isDesktop && <h2>{TEXTS[lang].desktopExample}</h2>}
 			</>
+
+			<LayoutSwitcher>
+				<PokemonViewer />
+				<PokemonViewer />
+				<PokemonViewer />
+				<PokemonViewer />
+			</LayoutSwitcher>
+
 			<RegisterForm />
 
 			<CounterBox />
