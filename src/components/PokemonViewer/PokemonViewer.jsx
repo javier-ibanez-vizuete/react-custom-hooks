@@ -13,7 +13,7 @@ export const PokemonViewer = () => {
 	const { lang, TEXTS } = useContext(LanguageContext);
 
 	const { data, loading, errorFetch } = useFetch(
-		`https://pokeapi.co/api/v2/pokemon-form/${inputData.pokemonId ? inputData.pokemonId : 1}/`
+		`https://pokeapi.co/api/v2/pokemon-form/${inputData.pokemonId ? inputData.pokemonId : 17}/`
 	);
 
 	const onInputChange = (event) => {
