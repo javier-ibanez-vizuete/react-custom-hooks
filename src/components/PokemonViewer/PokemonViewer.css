@@ -1,0 +1,90 @@
+.pokemon-viewer {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	align-self: center;
+	gap: 1rem;
+
+    padding: var(--spacing-lg) 0;
+}
+
+.pokemon-viewer > .custom-input {
+	padding: var(--spacing-md);
+	background-color: var(--bg-color);
+	border-radius: var(--border-radius-card);
+}
+
+.pokemon-viewer > .custom-input > input {
+	align-self: center;
+	background: none;
+	text-align: center;
+	border: 1px dashed #888;
+}
+
+.pokemon-card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: var(--spacing-2xl);
+	border-radius: 50%;
+}
+
+.pokemon-card-container > h4 {
+    text-transform: uppercase;
+}
+
+.pokemon-card-container.normal {
+	background: linear-gradient(0deg, rgba(168, 167, 122, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.fire {
+	background: linear-gradient(0deg, rgba(238, 129, 48, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.water {
+	background: linear-gradient(0deg, rgba(99, 144, 240, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.electric {
+	background: linear-gradient(0deg, rgba(247, 208, 44, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.grass {
+	background: linear-gradient(0deg, rgba(122, 199, 76, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.ice {
+	background: linear-gradient(0deg, rgba(150, 217, 214, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.fighting {
+	background: linear-gradient(0deg, rgba(194, 46, 40, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.poison {
+	background: linear-gradient(0deg, rgba(163, 62, 161, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.ground {
+	background: linear-gradient(0deg, rgba(226, 191, 101, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.flying {
+	background: linear-gradient(0deg, rgba(169, 143, 243, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.psychic {
+	background: linear-gradient(0deg, rgba(249, 85, 135, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.bug {
+	background: linear-gradient(0deg, rgba(166, 185, 26, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.rock {
+	background: linear-gradient(0deg, rgba(182, 161, 54, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.ghost {
+	background: linear-gradient(0deg, rgba(115, 87, 151, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.dragon {
+	background: linear-gradient(0deg, rgba(111, 95, 252, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.dark {
+	background: linear-gradient(0deg, rgba(112, 87, 70, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.steel {
+	background: linear-gradient(0deg, rgba(183, 183, 206, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+.pokemon-card-container.fairy {
+	background: linear-gradient(0deg, rgba(214, 133, 173, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}

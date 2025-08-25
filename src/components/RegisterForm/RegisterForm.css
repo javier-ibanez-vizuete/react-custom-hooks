@@ -1,0 +1,25 @@
+.register-form {
+	display: flex;
+	flex-direction: column;
+    align-self: center;
+	gap: 1rem;
+
+	padding: var(--spacing-lg);
+    width: 400px;
+    background-color: brown;
+    border-radius: var(--border-radius-card);
+}
+
+.register-form > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.register-form .password-field-container {
+	display: flex;
+	gap: 1rem;
+}
+
+.register-form .password-field-container > input {
+    flex: 1;
+}

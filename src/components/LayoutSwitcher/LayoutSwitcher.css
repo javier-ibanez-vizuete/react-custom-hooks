@@ -1,0 +1,17 @@
+.layout-switcher {
+    display: grid;
+}
+
+.layout-switcher.isMobile {
+    grid-template-columns: repeat(2, 1fr);
+}
+.layout-switcher.isTablet {
+    grid-template-columns: repeat(3, 1fr);
+}
+.layout-switcher.isDesktop {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.layout-switcher > .pokemon-viewer {
+    flex-direction: column;
+}

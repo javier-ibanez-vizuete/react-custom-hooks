@@ -1,0 +1,55 @@
+body {
+	background-color: bisque;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+#root > div {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	gap: 2rem;
+
+	width: var(--container-width);
+	margin: 0 auto;
+}
+
+.app.mobile {
+	background-color: antiquewhite;
+}
+
+.app.tablet {
+	background-color: cadetblue;
+}
+
+.app.desktop {
+	background-color: #fabada;
+}
+
+.btn {
+	padding: var(--spacing-xs) var(--spacing-sm);
+	border-radius: var(--border-radius-card);
+}
+.btn-primary {
+	background-color: var(--btn-primary-color);
+}
+
+.btn-secondary {
+	background-color: var(--btn-secondary-color);
+	color: var(--btn-text-color-dark);
+}
+
+.error-text {
+	color: red;
+	font-weight: bolder;
+}
+
+.text-small {
+	font-size: 0.7rem;
+	font-style: italic;
+	color: #888;
+}
